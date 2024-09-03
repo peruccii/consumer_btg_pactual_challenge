@@ -6,11 +6,11 @@ import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Service;
 
 @Service
-public class ConsumerProducts {
+public class RequestsConsumer {
 
     private final RequestRepository requestRepository;
 
-    public ConsumerProducts(RequestRepository requestRepository) {
+    public RequestsConsumer(RequestRepository requestRepository) {
         this.requestRepository = requestRepository;
     }
 
